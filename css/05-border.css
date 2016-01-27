@@ -1,0 +1,203 @@
+/* 
+Points To Keep In Mind While You Are Learning Style Properties
+-------------------------------------------------------------------
+	+	Default Values
+	+	Inheritence
+	+	Can this be applied to all elements
+
+BAckground related style properties
++++++++++++++++++++++++++++++++++++++++
+
+border-width: pixels
+border-style: none solid dotted dashed double ridge groove inset outset
+border-color: 
+border-radius:
+
+border-top:[style] [width] [color];
+	example:-
+		 border: solid 2px red;
+border-right:;
+border-bottom:;
+border-left:;
+
+
+border-image:
+
+border-collapse
+border-spacing
+empty-cells – show | hide
+
+*/
+
+.bdr-demo-wrap{
+
+	margin: 20px 50px;
+
+	border-top-style:ridge;
+	border-top-width:10px;
+	border-top-color:green;
+
+	border-right-style:groove;
+	border-right-width:10px;
+	border-right-color:red;
+
+	border-bottom-style:double;
+	border-bottom-width:10px;
+	border-bottom-color:blue;
+
+	border-left-style:double;
+	border-left-width:10px;
+	border-left-color:orange;
+}
+.bdr-demo-wrap1{
+
+	margin: 20px 50px;
+
+	border-top:solid 40px green;
+	border-right:dotted 60px violet;
+	border-bottom:dashed 10px orange;
+	border-left:solid 40px blue;
+
+}
+
+.bdr-demo-wrap2{
+
+	margin: 20px 50px;
+
+	border:solid 40px green;
+}
+
+.demo-wrap{
+	border: solid 2px black;
+	background-color: lightblue;
+	margin: 30px 80px;
+	padding: 50px;
+}
+.demo-wrap:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.box{
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+	float: left;
+	background-color: lightgreen;
+	text-align: center;
+	border: solid 10px red;
+}
+
+.box__bdr1{
+	border-radius: 50%;
+	border-color: red;
+}
+.box__bdr2{
+	border-radius:10px 50%;
+	border-color: blue green;
+}
+.box__bdr3{
+	border-radius: 0 50% 10px;
+	border-color: violet crimson green;
+}
+.box__bdr4{
+	border-radius: 0 10px 20px 30px;
+	border-color: red blue green yellow;
+}
+
+.readmore{
+	font-size: 13px;
+	position: relative;
+	padding-right:15px;
+
+
+}
+.readmore:link{
+	color: #666;
+	text-decoration: none;
+}
+.readmore:hover{
+	color: #333;
+}
+.readmore:after{
+/* 
+	border-top: solid 6px transparent;
+	border-right: solid 6px transparent;
+	border-bottom: solid 6px transparent;
+	border-left: solid 6px #666;
+*/
+/*
+	border:solid 6px transparent;
+	border-left-color:#666;
+*/
+
+	border-style: solid;
+	border-width: 6px;
+	border-color: transparent transparent transparent #666;
+
+	content: "";
+
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 0;
+	top: 4px;
+	-webkit-transition: all 250ms ease-in-out;
+		 -moz-transition: all 250ms ease-in-out;
+			-ms-transition: all 250ms ease-in-out;
+			 -o-transition: all 250ms ease-in-out;
+					transition: all 250ms ease-in-out;
+}
+
+.readmore:hover:after{
+	border-left-color:red;
+	right:-10px;
+}
+
+.readmore:before{
+	height: 10px;
+	border-top:solid 2px red;
+	border-bottom:solid 2px red;
+	width: 0;
+	content: "";
+	position: absolute;
+	bottom: 1px;
+
+	-webkit-transition: all 250ms ease-in-out;
+		 -moz-transition: all 250ms ease-in-out;
+			-ms-transition: all 250ms ease-in-out;
+			 -o-transition: all 250ms ease-in-out;
+					transition: all 250ms ease-in-out;
+
+}
+.readmore:hover:before{
+	width: 100%;
+}
+
+.has-submenu{
+	font-size: 13px;
+	position: relative;
+}
+.has-submenu:link{
+	color: #666;
+	text-decoration: none;
+}
+.has-submenu:after{
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-right:solid 2px #666;
+	border-bottom:solid 2px #666;
+	position: absolute;
+	right: -14px;
+	top: 4px;
+
+	-webkit-transform: rotate(45deg);
+		 -moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			 -o-transform: rotate(45deg);
+					transform: rotate(45deg);
+
+
+}

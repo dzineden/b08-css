@@ -1,0 +1,149 @@
+/* 
+Points To Keep In Mind While You Are Learning Style Properties
+-------------------------------------------------------------------
+	+	Default Values
+	+	Inheritence
+	+	Can this be applied to all elements
+
+BAckground related style properties
++++++++++++++++++++++++++++++++++++++++
+
+background-color:;
+background-image: url('');
+background-repeat: repeat | no-repeat | repeat-x | repeat-y
+background-attachment- fixed | scroll
+background-position
+background [color image repeat attachment position]
+background-size – contain, cover
+
+background-origin – border-box, padding-box, content-box
+background-clip – 
+multiple backgrounds – CSS3
+Gradient Backgrounds – CSS3
+
+
+
+
+
+*/
+
+body{
+	background-image: url(../img/banner-05.jpg);
+	background-attachment: fixed;
+	
+}
+.demo-wrap{
+	border: dotted 1px red;
+	margin: 20px auto;
+	padding: 15px;
+}
+
+.red{background-color: red}
+.blue{background-color: blue}
+.transparent{background-color: transparent;}
+
+.bg-lines{
+	background-image: url(../img/white-lines.gif);
+}
+.dots{
+	background-attachment: fixed;
+	background-image: url(../img/dots.gif);
+}
+.anchor{
+	background-image: url(../img/anchorly-logo.png);
+	background-repeat: no-repeat;
+}
+.dummy{
+	height: 800px
+}
+.boxy{
+	width: 250px;
+	height: 100px;
+	background-color: #EC00BD;
+}
+.boxy__bg1{
+	background-image: url(../img/anchorly-logo.png);
+	background-repeat: no-repeat;
+	background-position: 95% 95%;
+}
+.boxy__bg2{
+	background-image: url(../img/banner-05.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% auto;
+	background-size: cover;
+}
+.boxy__bg3{
+
+	background: #b8e1fc;
+	background: -moz-linear-gradient(left,  #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%);
+	background: -webkit-linear-gradient(left,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%);
+	background: linear-gradient(to right,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e1fc', endColorstr='#bdf3fd',GradientType=1 );
+}
+.boxy__md{
+	width: 350px;
+	height: 150px;
+}
+.boxy__lg{
+	width: 450px;
+	height: 250px;
+}
+.white{background-color: white}
+.white:after{
+	display: table;
+	clear: both;
+	content: "";
+}
+
+[class^="icons-"]{
+	background-image: url(../img/sprite-a.png);
+	border: dotted 1px #333;
+	float: left;
+	margin-right: 2px;
+}
+
+
+.icons-heart{
+	width: 10px;
+	height: 9px;
+	background-position: -2px -2px;
+}
+.icons-lock{
+	width: 10px;
+	height: 9px;
+	background-position: -2px -2px;
+}
+.icons-a{
+	width: 10px;
+	height: 9px;
+	background-position: -2px -2px;
+}
+.icons-b{
+	width: 10px;
+	height: 9px;
+	background-position: -2px -2px;
+}
+.icons-c{
+	width: 10px;
+	height: 9px;
+	background-position: -2px -2px;
+}
+.icons-foot{
+	width: 10px;
+	height: 9px;
+	background-position: -2px -2px;
+}
+.icons-car{
+	width: 10px;
+	height: 9px;
+	background-position: -2px -2px;
+}
+.icons-umbrella{
+	width: 10px;
+	height: 9px;
+	background-position: -2px -2px;
+}
+
+
+
+

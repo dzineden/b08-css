@@ -1,0 +1,83 @@
+/* 
+Points To Keep In Mind While You Are Learning Style Properties
+-------------------------------------------------------------------
+		+	Default Values
+		+	Inheritence
+		+	Can this be applied to all elements
+
+
+Font related style properties
++++++++++++++++++++++++++++++++++++++++
+
+font-style: normal | italic | oblique | inherit
+font-weight: normal | bold | bolder | lighter | 
+						 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+font-size: pixels - px | % | em | rem | vw | vh
+line-height:
+font-family:
+	font:  [font-style font-weight font-size/line-height font-family]
+text-transform: none | capitalize | uppercase | lowercase | full-width
+color:
+			Colornames
+			Hexdecimal code / shorthand format - when all the three pairs have identical values
+			rgb format
+			rgba format
+text-decoration: none | underline | overline | line-through
+
+
+rgba(); css3
+text-shadow – css3
+vw, vh, rem – css3
+@font-face
+
+
+
+*/
+
+.demo-wrap{
+	border: solid 1px #333;
+	padding: 20px;
+	margin: 20px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.demo-wrap p{
+	font-style: italic;
+	font-size: 2em;
+}
+.demo-wrap address{
+	font-style: normal;
+}
+
+.whatever{
+	font-style: italic;
+}
+
+
+.display-txt{
+	font-size: 12.5vw;
+	line-height: 1
+}
+
+.heading{
+	background-color: green;
+	color: white;/* color name */
+/* 
+	color: #FFFFFF;hex decimal code
+	color: #FFF;shorthand format for hex code
+	color: rgb(255,255,255);rgb
+	color: rgba(255,255,255,.5);rgba
+*/
+	line-height: 60px;
+	font-size: 20px;
+}
+
+.font-demo{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+
+	font: italic bold 24px/30px Tahoma, Verdana, Segoe, sans-serif;
+}

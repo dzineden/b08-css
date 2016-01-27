@@ -1,0 +1,45 @@
+/* 
+Points To Keep In Mind While You Are Learning Style Properties
+-------------------------------------------------------------------
+	+	Default Values
+	+	Inheritence
+	+	Can this be applied to all elements
+
+List related style properties
++++++++++++++++++++++++++++++++++++++++
+
+list-style:squre | inside  | circle | ;
+list-type
+list-style-image
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/list-style
+
+
+*/
+
+.demo-wrap{
+	border: dotted 1px red;
+	margin: 20px auto;
+	padding: 15px;
+}
+
+.list-one{
+	list-style: square;
+}
+
+.list-two{
+	list-style: none;
+	border: solid 2px red;
+	padding-left: 0;
+}
+.list-two li{
+	border: solid 1px green;
+	margin: 0 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline;
+}
+
+
+
