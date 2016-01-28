@@ -1,0 +1,73 @@
+/* 
+Points To Keep In Mind While You Are Learning Style Properties
+-------------------------------------------------------------------
+	+	Default Values
+	+	Inheritence
+	+	Can this be applied to all elements
+
+BAckground related style properties
++++++++++++++++++++++++++++++++++++++++
+
+width, min-width, max-width
+height, min-height, max-height 
+padding
+margin
+overflow: visible | hidden | scroll | auto
+float : left | right | none
+clear: none | left | right | both
+
+
+box-sizing – content-box | padding-box | border-box
+Flexbox
+resize - none | both | horizontal | vertical 
+opacity 
+column-count
+column-gap
+column-fill – auto | balance
+column-rule - <'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>
+
+*/
+
+
+.demo-dabba{
+	border: solid 10px red;
+	margin: 20px;
+	background-color: lightgreen;
+	padding: 20px;
+}
+
+.dabba{
+	border: solid 2px green;
+	background-color: lightblue;
+	margin: 10px;
+	padding: 20px;
+	max-width: 50%;
+	min-height: 70px;
+	max-height: 150px;
+	overflow: scroll;
+}
+span.dabba{
+	border-color:blue;
+	margin: 40px;
+}
+
+.box{
+	border: dotted 1px black;
+	background-color: lightblue;
+	width: 150px;
+	margin: 10px;
+}
+
+div.box{
+	float: left;
+	height: 50px;
+}
+span.box{
+	float: right;
+	height: 75px;
+}
+
+.clear-fix{
+	background-color: pink;
+	clear: both;
+}
