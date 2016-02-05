@@ -18,6 +18,7 @@ clear: none | left | right | both
 
 
 box-sizing – content-box | padding-box | border-box
+
 Flexbox
 resize - none | both | horizontal | vertical 
 opacity 
@@ -70,4 +71,117 @@ span.box{
 .clear-fix{
 	background-color: pink;
 	clear: both;
+}
+
+
+.demo-blk{
+	border: dotted 1px black;
+	padding: 15px;
+	background-color: lightblue;
+	float: left;
+}
+.demo-inline{
+	border: dotted 1px black;
+	padding: 15px;
+	background-color: lightblue;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 200px;
+}
+.demo-flt-after{
+	border: solid 1px red;
+	background-color: pink;
+	clear: both;
+}
+
+.fl, .fr{
+	border: dotted 1px black;
+	background-color: lightblue;
+	padding: 10px;
+}
+.fl{float: left;}
+.fr{float: right;}
+
+.clearz{clear: both;}
+
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.demo-dabba:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.panel{
+	border: solid 20px green;
+	background-color: lightblue;
+	padding: 25px;
+	margin: 10px;
+	width: 200px;
+	float: left;
+	min-height: 100px;
+}
+.panel_content-box{
+	-webkit-box-sizing: content-box;
+		 -moz-box-sizing: content-box;
+					box-sizing: content-box;
+}
+.panel_border-box{
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+					box-sizing: border-box;
+}
+.panel_padding-box{
+	-webkit-box-sizing: padding-box;
+		 -moz-box-sizing: padding-box;
+					box-sizing: padding-box;
+}
+
+.row{
+	margin: 10px;
+	padding: 10px;
+	background-color: lightblue;
+	border:solid 5px green;
+}
+.row:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.one-half{
+	border: solid 5px yellow;
+	background-color: wheat;
+	float: left;
+	width: 50%;
+	padding: 25px;
+	min-height: 100px;
+}
+.one-third{
+	border: solid 1px black;
+	background-color: wheat;
+	float: left;
+	width: 33.333%;
+	min-height: 100px;
+	padding: 20px;
+}
+
+._border-box *{
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+					box-sizing: border-box;
+}
+
+
+.square200{
+	width: 200px;
+	height: 200px;
+	border: solid 4px wheat;
+	background-color: lightgreen;
+	padding:10px;
+	margin: 20px auto;
+	overflow: scroll	
 }

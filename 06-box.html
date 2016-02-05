@@ -31,6 +31,35 @@
 		<h2 class="page-title">Box Related Styles</h2>
 
 		<div class="demo-dabba">
+			<p>What Actually happens to floated element, if it is Block level element?</p>
+			<div class="demo-blk">Block level element looses its width, starts behaving somewhat like inline-block</div><!-- eo .demo-blk -->
+		</div><!-- eo .demo-dabba -->
+
+		<div class="demo-dabba">
+			<p>What Actually happens to floated element, if it is an inline elements?</p>
+			<span class="demo-inline">Inline element</span><!-- eo .demo-blk -->
+		</div><!-- eo .demo-dabba -->
+
+		<div class="demo-dabba">
+			<p>What Actually happens to element following floated element?</p>
+			<span class="demo-inline">Inline element</span><!-- eo .demo-blk -->
+			<div class="demo-flt-after">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi qui, iste omnis quo vitae odio autem ipsa pariatur fuga quasi perferendis repellat, consectetur sit quaerat magnam necessitatibus laboriosam dolorem quas.</div><!-- eo .demo-flt-after -->
+		</div><!-- eo .demo-dabba -->
+		<div class="demo-dabba">
+			<p>ClearFIX - using empty element</p>
+			<div class="fl">Float Left</div><!-- eo .demo-blk -->
+			<div class="fr">Float Right</div><!-- eo .demo-blk -->
+			<div class="clearz"><!--   --></div>
+		</div><!-- eo .demo-dabba -->
+
+		<div class="demo-dabba clearfix">
+			<p>ClearFIX - using psuedo element - after</p>
+			<div class="fl">Float Left</div><!-- eo .demo-blk -->
+			<div class="fr">Float Right</div><!-- eo .demo-blk -->
+		</div><!-- eo .demo-dabba -->
+
+
+		<div class="demo-dabba">
 			<div class="box">div box1</div><!-- eo .box -->
 			<div class="box">div box2</div><!-- eo .box -->
 			<div class="box">div box3</div><!-- eo .box -->
@@ -56,6 +85,46 @@
 			<span class="dabba">span dabba 05</span>
 		</div><!-- eo .demo-dabba -->
 		
+		<div class="demo-dabba">
+			<h3>demo of box-sizing property</h3>
+			<div class="panel">
+				<p>Default box sizing</p>
+			</div><!-- eo .panel -->
+			<div class="panel panel_content-box">
+				<p>Box sizing property set to content-box</p>
+			</div><!-- eo .panel -->
+			<div class="panel panel_border-box">
+				<p>Box sizing property set to border-box</p>
+			</div><!-- eo .panel -->
+			<div class="panel panel_padding-box">
+				<p>Box sizing property set to padding-box</p>
+			</div><!-- eo .panel -->
+		</div><!-- eo .demo-dabba -->
+
+<div class="row">
+	<h3>demo of box-sizing property in columns</h3>
+	<div class="one-half">One half</div><!-- eo .one-half -->
+	<div class="one-half">One half</div><!-- eo .one-half -->
+</div><!-- eo .row -->
+<div class="row _border-box">
+	<h3>demo of box-sizing property in columns</h3>
+	<div class="one-half">One half</div><!-- eo .one-half -->
+	<div class="one-half">One half</div><!-- eo .one-half -->
+</div><!-- eo .row -->
+<div class="row _border-box">
+	<h3>demo of box-sizing property in columns</h3>
+	<div class="one-third">one third</div><!-- eo .one-third -->
+	<div class="one-third">one third</div><!-- eo .one-third -->
+	<div class="one-third">one third</div><!-- eo .one-third -->
+</div><!-- eo .row -->
+
+<div class="square200">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed odio quisquam doloremque dignissimos vitae accusantium neque eveniet necessitatibus nulla quas est sint libero, aperiam autem labore delectus! Sed, ipsum, cupiditate.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed odio quisquam doloremque dignissimos vitae accusantium neque eveniet necessitatibus nulla quas est sint libero, aperiam autem labore delectus! Sed, ipsum, cupiditate.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed odio quisquam doloremque dignissimos vitae accusantium neque eveniet necessitatibus nulla quas est sint libero, aperiam autem labore delectus! Sed, ipsum, cupiditate.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed odio quisquam doloremque dignissimos vitae accusantium neque eveniet necessitatibus nulla quas est sint libero, aperiam autem labore delectus! Sed, ipsum, cupiditate.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed odio quisquam doloremque dignissimos vitae accusantium neque eveniet necessitatibus nulla quas est sint libero, aperiam autem labore delectus! Sed, ipsum, cupiditate.
+</div><!-- eo .square200 -->
 
 	</div><!-- eo .container -->
 	<footer class="site-footer">
