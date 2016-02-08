@@ -185,3 +185,47 @@ span.box{
 	margin: 20px auto;
 	overflow: scroll	
 }
+.txt-center{text-align: center;}
+
+
+.bb_onehalf,
+.bb_onethird,
+.bb_onefourth,
+.bb_onefifth{padding: 10px;}
+
+@media(min-width: 768px){
+	.bb_onehalf{
+		float: left;
+		width: 50%;
+	}
+	.bb_onethird{
+		float: left;
+		width: 33.3333%;
+	}
+	.bb_onefourth{
+		float: left;
+		width: 25%;
+	}
+	.bb_onefifth{
+		float: left;
+		width: 20%;
+	}
+}/*eom*/
+												 .row h1{font-size:  8vw;}
+@media(min-width: 640px){.row h1{font-size:  6vw;}}
+@media(min-width: 768px){.row h1{font-size: 32px;}}
+
+.bb_panel{
+	border: solid 1px #AEFFA9;
+	background-color: #EDFFEC
+}
+.bb_panel h3{
+	border-bottom: solid 1px #DDD;
+	background-color: #AEFFA9;
+	padding: 5px 15px;
+	margin-top: 0;
+}
+.bb_panel p{
+	padding: 5px 15px
+}
+
