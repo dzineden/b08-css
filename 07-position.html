@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>CSS - styling the web</title>
 	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/07-position.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300|Droid+Serif' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="favicon.ico" />
 </head>
@@ -22,16 +23,77 @@
 				<li><a href="06-box.html">Box</a></li>
 				<li class="active"><a href="07-position.html">Position</a></li>
 				<li><a href="08-css3.html">CSS3</a></li>
-				<li><a href="09-animation.html">Animations</a></li>
+				<li><a href="09-animation.html" class="open-modal">Animations</a></li>
 			</ul>
 		</nav><!-- eo .site-nav -->
 	</header><!-- eo .site-header -->
 	<div class="container">
 		<h2 class="page-title">Position Related Styles</h2>
 
+		<div class="banner">
+			<img src="img/banner-05.jpg" height="784" width="1920" alt="" />
+			<h1>This text will come in the center</h1>
+			<div class="arrow left">left</div><!-- eo .arrow -->
+			<div class="arrow right">right</div><!-- eo .arrow -->
+		</div><!-- eo .banner -->
+
+		<div class="demo-dabba">
+			<h3>demo of static elements</h3>
+			<div class="dabba wheat _static">I am a div dabba</div><!-- eo .dabba -->
+			<div class="dabba pink _static">I am a div dabba</div><!-- eo .dabba -->
+			<div class="dabba lightgreen _static">I am a div dabba</div><!-- eo .dabba -->
+			<span class="dabba lightblue">I am a span dabba</span><!-- eo .dabba -->
+			<span class="dabba lightcoral">I am a span dabba</span><!-- eo .dabba -->
+			<span class="dabba khaki">I am a span dabba</span><!-- eo .dabba -->
+			<span class="dabba plum">I am a span dabba</span><!-- eo .dabba -->
+		</div><!-- eo .demo-dabba -->
+		<div class="demo-dabba">
+			<h3>demo of Relative elements</h3>
+			<div class="dabba wheat _relative ">I am a div dabba</div><!-- eo .dabba -->
+			<div class="dabba pink _relative move">I am a div dabba</div><!-- eo .dabba -->
+			<div class="dabba lightgreen _relative">I am a div dabba</div><!-- eo .dabba -->
+			<span class="dabba lightblue">I am a span dabba</span><!-- eo .dabba -->
+			<span class="dabba lightcoral">I am a span dabba</span><!-- eo .dabba -->
+			<span class="dabba khaki">I am a span dabba</span><!-- eo .dabba -->
+			<span class="dabba plum">I am a span dabba</span><!-- eo .dabba -->
+		</div><!-- eo .demo-dabba -->
+		<div class="demo-dabba _relative">
+			<h3>demo of Absolute elements</h3>
+			<div class="dabba wheat  ">I am a div dabba wheat</div><!-- eo .dabba -->
+			<div class="dabba pink  _absolute ">I am a div dabba pink</div><!-- eo .dabba -->
+			<div class="dabba darkseagreen ">I am a div dabba darkseagreen</div><!-- eo .dabba -->
+			<span class="dabba lightblue">I am a span dabba lightblue</span><!-- eo .dabba -->
+			<span class="dabba lightcoral">I am a span dabba lightcoral</span><!-- eo .dabba -->
+			<span class="dabba khaki">I am a span dabba khaki</span><!-- eo .dabba -->
+			<span class="dabba plum">I am a span dabba plum</span><!-- eo .dabba -->
+		</div><!-- eo .demo-dabba -->
 	</div><!-- eo .container -->
 	<footer class="site-footer">
 		<p>&copy; 2016, <a href="http://krisschool.com/">KriS' School of Webdesign</a></p>
 	</footer><!-- eo .site-footer -->
+
+<div class="modal">
+	<div class="modal_wrap">
+		<header class="modal_header">
+			<h2>Some heading</h2>
+			<div class="close">
+				<span></span>
+				<span></span>
+			</div><!-- eo .close -->
+		</header><!-- eo .modal_header -->
+		<div class="modal_body">
+			Some content
+		</div><!-- eo .modal_body -->
+		<footer class="modal_footer">
+			some footer text
+		</footer><!-- eo .modal_footer -->
+	</div><!-- eo .modal_wrap -->	
+</div><!-- eo .modal -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+  <script src="js/main.js"></script>
+
+
 </body>
 </html>
