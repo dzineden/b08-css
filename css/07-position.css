@@ -113,6 +113,7 @@ overflow-y
 	left: 0;
 	right:0;
 	bottom: 0;
+	display: none;
 }
 .modal_wrap{
 	width: 450px;
