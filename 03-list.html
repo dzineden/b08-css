@@ -62,6 +62,58 @@
 				<li>List item</li>
 				<li>List item</li>
 			</ol>
+			<h3 class="some-heading">Some heading here explaining something</h3>
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur </li>
+				<li>adipisicing elit. Optio aliquid ut recusandae deserunt </li>
+				<li>possimus, eveniet amet, ratione odio </li>
+				<li>delectus non pariatur dicta Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur, animi vel rerum possimus dolorem id. Deserunt ducimus fugit laborum, debitis exercitationem velit, modi alias provident ipsa accusamus? Esse, libero. delectus non pariatur dicta Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur, animi vel rerum possimus dolorem id. Deserunt ducimus fugit laborum, debitis exercitationem velit, modi alias provident ipsa accusamus? Esse, libero. delectus non pariatur dicta Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur, animi vel rerum possimus dolorem id. Deserunt ducimus fugit laborum, debitis exercitationem velit, modi alias provident ipsa accusamus? Esse, libero. </li>
+				<li>voluptatem consequatur natus iure </li>
+				<li>nobis cum asperiores laborum.</li>
+			</ul>
+			<h3 class="some-heading">List with with different icons</h3>
+			<ul>
+				<li class="li-animation">Lorem ipsum dolor sit amet, consectetur </li>
+				<li class="li-font">adipisicing elit. Optio aliquid ut recusandae deserunt </li>
+				<li class="li-brightness">possimus, eveniet amet, ratione odio </li>
+				<li class="li-devices">delectus non pariatur dicta Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+				<li>voluptatem consequatur natus iure </li>
+				<li>nobis cum asperiores laborum.</li>
+			</ul>
+			<style>
+				.some-heading{
+					color: crimson;
+					margin-bottom: 0;
+				}
+				
+				.some-heading + ul {
+					list-style: none;
+					padding-left: 0;
+				}
+				.some-heading + ul li {
+					padding: 0 0 10px 20px;
+					line-height: 24px;
+					position: relative;
+					
+				}
+				.some-heading + ul li:before {
+			    content: "\e0a3";
+			    font-family: 'icons-anchorly' !important;
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			    color: tomato;
+			    font-size: 12px;
+				}
+
+				.some-heading + ul li.li-animation:before	{content: "\e039"}
+				.some-heading + ul li.li-font:before			{content: "\e08b"}
+				.some-heading + ul li.li-brightness:before{content: "\e09d"}
+				.some-heading + ul li.li-devices:before		{content: "\e0a1"}
+
+
+
+			</style>
 		</div><!-- eo .demo-wrap -->
 
 	</div><!-- eo .container -->

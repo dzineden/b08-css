@@ -1,0 +1,80 @@
+
+.fb-post-wrap{
+	border: solid 10px red;
+	margin: 20px;
+	background-color: #e9eaed;
+	padding: 20px;
+}
+.fb-post-wrap *{
+	box-sizing: border-box; 
+}
+
+
+.fb-post{
+	border:solid 1px #e5e6e9;
+	width: 496px;
+	padding:12px;
+	background-color: #FFF;
+	margin:20px auto;
+	position: relative;
+}
+.fb-post:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.author-pic{
+	float: left;
+}
+.author-details{
+	float: left;
+	margin-left: 10px;
+}
+.author-details h3{
+	font-size: 14px;
+	margin:0;
+}
+.post-content{
+	clear: both;
+}
+.collapse{
+	width:15px;
+	height: 15px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background-color: red;
+	cursor: pointer;
+}
+.status:after{
+	content:"®";
+	cursor: pointer;
+	background-color: red;
+}
+.after-demo{
+	border:solid 1px red;
+	background-color: lightblue;
+	position: relative;
+}
+.after-demo:before{
+	content:"say hi to rejin";
+	border:solid 1px green;
+	background-color: lightgreen;
+	position: absolute;
+	left:0;
+	top: 0;
+	bottom: 0;
+}
+.after-demo:after{
+	content:"say bye to prachod";
+	border:solid 1px green;
+	background-color: lightgreen;
+	position: absolute;
+	right:0;
+	top: 0;
+	bottom: 0;
+}
+
+
+

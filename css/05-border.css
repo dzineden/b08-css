@@ -175,15 +175,15 @@ empty-cells – show | hide
 	width: 100%;
 }
 
-.has-submenu{
+.arrow-down{
 	font-size: 13px;
 	position: relative;
 }
-.has-submenu:link{
+.arrow-down:link{
 	color: #666;
 	text-decoration: none;
 }
-.has-submenu:after{
+.arrow-down:after{
 	content: "";
 	width: 8px;
 	height: 8px;

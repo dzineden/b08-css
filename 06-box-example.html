@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>CSS - styling the web</title>
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/05-border.css">
+	<link rel="stylesheet" href="css/06-box-fb-post.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300|Droid+Serif' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="favicon.ico" />
 </head>
@@ -19,8 +19,8 @@
 				<li><a href="02-block.html" class="icon-filter_none">Block</a></li>
 				<li><a href="03-list.html" class="icon-list">List</a></li>
 				<li><a href="04-background.html" class="icon-photo_library">Background</a></li>
-				<li class="active"><a href="05-border.html" class="icon-border">Border</a></li>
-				<li><a href="06-box.html" class="icon-fullscreen">Box</a></li>
+				<li><a href="05-border.html" class="icon-border">Border</a></li>
+				<li class="active"><a href="06-box.html" class="icon-fullscreen">Box</a></li>
 				<li><a href="07-position.html" class="icon-flight_takeoff">Position</a></li>
 				<li class="has-submenu">
 					<a href="08-css3.html" class="icon-css3">CSS3</a>
@@ -38,30 +38,32 @@
 		</nav><!-- eo .site-nav -->
 	</header><!-- eo .site-header -->
 	<div class="container">
-		<h2 class="page-title">Border Related Styles</h2>
+		<ol class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html">Box Styles</a></li>
+			<li>Layout example 1</li>
+		</ol>
+		<h2 class="page-title">FB - Post layout example</h2>
 
-		<div class="bdr-demo-wrap">
-			borders
-		</div><!-- eo .demo-wrap -->
-		<div class="bdr-demo-wrap1">
-			borders
-		</div><!-- eo .demo-wrap -->
-		<div class="bdr-demo-wrap2">
-			borders
-		</div><!-- eo .demo-wrap -->
+		<div class="fb-post-wrap">
+			<div class="fb-post">
+				<div class="author-pic">
+					<a href="#"><img src="https://api.fnkr.net/testimg/40x40/00CED1/FFF/?text=author"></a>
+				</div><!-- eo .author-pic -->
+				<div class="author-details">
+					<h3><a href="#">Author name</a></h3>
+					<div class="status">Just Now </div>
+				</div><!-- eo .author-details -->
+				
+				<div class="post-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quod accusamus nemo fugit, aut quos consequuntur esse nesciunt neque nihil. Consectetur at illo repellat minus, voluptatum nihil dicta asperiores quaerat.
+				</div><!-- eo .post-content -->
+				<div class="collapse"></div><!-- eo .collapse -->
+			</div><!-- eo .fb-post -->
 
-	<div class="demo-wrap">
-		<div class="box box__bdr1">box</div><!-- eo .box -->
-		<div class="box box__bdr2">box</div><!-- eo .box -->
-		<div class="box box__bdr3">box</div><!-- eo .box -->
-		<div class="box box__bdr4">box</div><!-- eo .box -->
-	</div><!-- eo .demo-wrap -->
-	<div class="demo-wrap">
-		<div>
-			<a href="#" class="readmore">read more</a>
-			<a href="#" class="arrow-down">More</a>
-		</div>
-	</div><!-- eo .demo-wrap -->
+			<div class="after-demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus earum harum vel distinctio, minima officia voluptatem! Eius esse veritatis, cum quo placeat maiores quia, odio natus aspernatur repellendus eligendi, quasi. sdf sadf sadf sad fe fdgj fg dfg</div><!-- eo .after-demo -->
+
+		</div><!-- eo .demo-dabba -->
 
 	</div><!-- eo .container -->
 	<footer class="site-footer">
