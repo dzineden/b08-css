@@ -37,7 +37,138 @@
 		</nav><!-- eo .site-nav -->
 	</header><!-- eo .site-header -->
 	<div class="container">
-		<h2 class="page-title">Introduction to CSS</h2>
+		<h2 class="page-title">Selectors</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quis quisquam laudantium! Nisi assumenda, quae sunt, sapiente qui illum corporis cupiditate. Mollitia placeat nemo et commodi dignissimos blanditiis voluptates reprehenderit.</p>
+		<ul>
+			<li>Universal selectors</li>
+			<li>Type selectors</li>
+			<li>Class selectors</li>
+			<li>Attributes selectors</li>
+			<li>Pseudo selectors - before, after, link, hover, visited, active, focus, first-child, last-child, nth-child(), selection, first-letter, checked, </li>
+			<li>ID selectors</li>
+		</ul>
+
+		<ul>
+			<li><a href="https://developer.mozilla.org/en/docs/Web/CSS/::first-letter">Tutorial about the Psuedo Selectors</a></li>
+			<li><a href="http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048">Article about selectors</a></li>
+		</ul>
+
+		<style>
+
+
+
+			*{
+				color: black;
+			}
+			.container h4{color: indigo}
+			#page-sub-heading{color: orange;}
+			h4{color: green;}
+			.blue-heading{
+			  font-family: "Droid Serif";
+			  color: blue;
+			}
+			h4{color: red;}
+			h4[title]{color: violet}
+			[class="heading"]{color: violet}
+			[href^="http://"]{color: violet}
+			[href~=".jpg"]{color: violet}
+			[class*="icon"]{color: violet}
+			.feature-title + p{color: green}
+			.feature-title ~ p{color: pink}
+		</style>
+
+		<h4>This is a h4</h4>
+		<h4 class="blue-heading" title="some heading">This is a h4, with class blue-heading</h4>
+		<h4 class="blue-heading" id="page-sub-heading">This is a h4, with class blue-heading and and id page-sub-heading</h4>
+
+		<h3 class="feature-title">Feature one</h3>
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde recusandae aperiam ab, deserunt doloremque, dolore ex culpa eius veritatis dignissimos quidem voluptatem fugiat quaerat cupiditate aut ratione et sint officiis.</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis amet nisi iure molestias quibusdam laboriosam, temporibus! Praesentium, modi, dolore. Odit repellat debitis esse eligendi reiciendis voluptatem corporis doloremque dicta, similique.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi provident nostrum, officiis iure quidem vitae voluptates voluptatem quisquam neque dolorum, eos architecto facere mollitia, aspernatur, quod quam voluptas saepe dicta.</p>
+
+	<div class="form-wrap">
+		<div class="form-row">
+			<input type="text" />
+			<label for="kg_input1">Your Name</label>
+			<span class="bar"></span>
+		</div><!-- eo .form-row -->
+		<div class="form-row">
+			<input type="text" />
+			<label for="kg_input1">Your Email</label>
+			<span class="bar"></span>
+		</div><!-- eo .form-row -->
+	</div><!-- eo .form-wrap -->
+<style>
+	.form-wrap{
+		background-color: #CCC;
+		width: 800px;
+		margin: 20px auto;
+		padding: 40px 200px;
+	}
+	.form-wrap,
+	.form-wrap *{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.form-row{
+		clear: both;
+		padding: 10px;
+		background-color: #FFF;
+		margin-bottom: 10px;
+		position: relative;
+	}
+	.form-row input{
+		border: none;
+		border-bottom: solid 1px #999;
+		width: 100%;
+		margin-top: 20px;
+		background-color: transparent;
+		position: relative;
+		z-index: 1;
+	}
+	.form-row label{
+		position: absolute;
+		width: 100%;
+		left: 10px;
+		top: 25px;
+		color: #666;
+		-webkit-transition: all 300ms ease;
+		-moz-transition: all 300ms ease;
+		-ms-transition: all 300ms ease;
+		-o-transition: all 300ms ease;
+		transition: all 300ms ease;
+	}
+	.form-row input:focus + label{
+		top: 5px;
+		font-size: 12px;
+		color: crimson;
+	}
+	.form-row input ~ .bar{
+		background-color: crimson;
+		position: absolute;
+		height: 2px;
+		bottom: 10px;
+		left: 10px;
+		right: 100%;
+		z-index: 2;
+		-webkit-transition: all 300ms ease;
+		-moz-transition: all 300ms ease;
+		-ms-transition: all 300ms ease;
+		-o-transition: all 300ms ease;
+		transition: all 300ms ease;
+}
+	.form-row input:focus ~ .bar{
+		background-color: crimson;
+		position: absolute;
+		height: 2px;
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
+		z-index: 2;
+	}
+
+</style>
 
 	</div><!-- eo .container -->
 	<footer class="site-footer">
