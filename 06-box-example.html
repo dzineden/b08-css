@@ -43,8 +43,113 @@
 			<li><a href="index.html">Box Styles</a></li>
 			<li>Layout example 1</li>
 		</ol>
-		<h2 class="page-title">FB - Post layout example</h2>
 
+
+		<h2 class="page-title">Blog List - <a href="http://www.sitepoint.com/title-css-simple-approach-css-class-naming/">Different ways of CSS Naming</a></h2>
+		<h2 class="page-title">Blog List - <a href="https://24ways.org/2014/naming-things/">Naming Things</a></h2>
+<div class="fb-post-wrap">
+	<div class="card card__article card__featured">
+		<div class="card-wrap">
+			<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+		</div>
+	</div><!-- eo .card -->
+	<div class="card card__news card__xl">
+		<div class="card-wrap">
+			<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+		</div>
+	</div><!-- eo .card -->
+	<div class="card card__news">
+		<div class="card-wrap">
+			<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+		</div>
+	</div><!-- eo .card -->
+	<div class="card card__photo card__l">
+		<div class="card-wrap">
+			<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+		</div>
+	</div><!-- eo .card -->
+	<div class="card card__news">
+		<div class="card-wrap">
+			<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+		</div>
+	</div><!-- eo .card -->
+	<div class="card card__news">
+		<div class="card-wrap">
+			<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+		</div>
+	</div><!-- eo .card -->
+	<div class="card card__news">
+		<div class="card-wrap">
+			<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+		</div>
+	</div><!-- eo .card -->
+	<div class="card card__news">
+		<div class="card-wrap">
+			<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+		</div>
+	</div><!-- eo .card -->
+	<div class="card card__news">
+		<div class="card-wrap">
+			<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+		</div>
+	</div><!-- eo .card -->
+	<div class="card card__news">
+		<div class="card-wrap">
+			<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+		</div>
+	</div><!-- eo .card -->
+</div>
+
+<style>
+.fb-post-wrap:after{content: "";clear: both;display: table;}
+.fb-post-wrap *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+	.card{
+		width: 20%;
+		float: left;
+		padding: 10px;
+		position: relative;
+	}
+	.card-wrap{
+		border: solid 5px #CCC;
+	}
+	.card img{
+		width: 100%;
+		max-height: 80px;
+		display: block;
+	}
+
+	.card:before{
+		background-color: rgba(0,0,0,.7);
+		padding: 4px 6px;
+		color: #FFF;
+		font-size: 12px;
+		text-transform: uppercase;
+		position: absolute;
+		left: 15px;
+		top: 15px; 
+	}
+	.card__news:before		{content: "News";}
+	.card__photo:before		{content: "photo";}
+	.card__quote:before		{content: "quote";}
+	.card__article:before	{content: "article";}
+	.card__video:before		{content: "video";}
+
+.card__featured .card-wrap{
+	border-color:red;
+}
+.card__featured:before{
+	background-color: rgba(255,0,0,.8);
+}
+
+.card__l{width: 40%;}
+.card__xl{width: 60%;}
+</style>
+
+		<h2 class="page-title">FB - Post layout example</h2>
 		<div class="fb-post-wrap">
 			<div class="fb-post">
 				<div class="author-pic">

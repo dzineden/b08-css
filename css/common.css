@@ -69,12 +69,12 @@ a:hover{
 }
 
 .site-nav{padding-bottom: 5px;}
-.site-nav ul{}
+.site-nav ul{padding-left: 0;}
 .site-nav ul li{
 	display: inline;
 	padding:0 5px;
 	position: relative;
-	
+    transition: all 400ms ease;
 }
 .site-nav ul li a{
 	font-size: 15px;
@@ -97,7 +97,7 @@ a:hover{
 .submenu{
 	width: 200px;
 	position: absolute;
-	top: 25px;
+	top: -25px;
 	left: -5px;
 	background-color: #ff2;
 	text-align: left;
@@ -105,12 +105,24 @@ a:hover{
 	z-index: 10;
 	padding-bottom: 10px;
 	display: none;
+    opacity: 0;
+    transition: all 400ms ease;
 }
 .site-nav ul li:hover .submenu{
 	display:block;
+    opacity: 1;
+    top: 25px;
+    transition: all 400ms ease;
 }
 .site-nav ul li .submenu li{
+    display:block;
+    width:0;
+    border:solid 1px red;
+    transition: all 400ms ease;
+}
+.site-nav ul li:hover .submenu li{
 	display:block;
+    width: 100%;
 }
 .site-nav ul li .submenu li a{
 	color:#333;
