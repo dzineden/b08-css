@@ -13,13 +13,13 @@
 		<h1><a href="index.html"><img src="img/anchorly-logo.png" height="60" width="60" alt="" /> anchorly<small> - linking the world together</small></a></h1>
 		<nav class="site-nav">
 			<ul>
-				<li><a href="index.html" class="icon-developer_mode">Home</a></li>
-				<li><a href="01-font.html" class="icon-font">Font</a></li>
+				<li><a href="index.html" class="icon-developer_mode" tabindex="1">Home</a></li>
+				<li><a href="01-font.html" class="icon-font" accesskey="x">Font</a></li>
 				<li><a href="02-block.html" class="icon-filter_none">Block</a></li>
 				<li><a href="03-list.html" class="icon-list">List</a></li>
-				<li><a href="04-background.html" class="icon-photo_library">Background</a></li>
+				<li><a href="04-background.html" class="icon-photo_library" tabindex="2">Background</a></li>
 				<li><a href="05-border.html" class="icon-border">Border</a></li>
-				<li><a href="06-box.html" class="icon-fullscreen">Box</a></li>
+				<li><a href="06-box.html" class="icon-fullscreen" tabindex="3">Box</a></li>
 				<li><a href="07-position.html" class="icon-flight_takeoff">Position</a></li>
 				<li  class="active has-submenu">
 					<a href="08-css3.html" class="icon-css3">CSS3</a>
@@ -37,7 +37,289 @@
 		</nav><!-- eo .site-nav -->
 	</header><!-- eo .site-header -->
 	<div class="container">
-		<h2 class="page-title">CSS3 Related Styles</h2>
+		<h2 class="page-title" contenteditable>CSS3 Related Styles</h2>
+
+<style>
+
+	.form-wrap{
+		background-color: #f5f5f5;
+		padding: 20px;
+		margin: 20px;
+		border-radius: 15px;
+	}
+	.form-row, .form-new-row{
+		padding-bottom: 15px;
+		border-bottom: dotted 1px #CCC;
+		margin-bottom: 15px;
+	}
+	.form-row:after,
+	.form-new-row:after{
+		clear: both;
+		content: "";
+		display: table;
+	}
+	.form-row label{
+		padding-bottom: 5px;
+	}
+	.form-row input[type="text"],
+	.form-row input[type="password"]{
+		width: 100%;
+		border: solid 1px #666;
+		border-radius: 6px;
+		padding: 5px 8px;
+	}
+	.form-new-row label.main-lbl{
+		width: 100%;
+		padding-right: 15px;
+	}
+	.rdo-wrap{
+		float: left;
+		width: 320px;
+	}
+	@media (min-width: 768px) {
+		.form-wrap{
+			width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.form-row label{
+			padding-bottom: 0;
+			padding-right: 15px;
+			text-align: right;
+			width: 35%;
+			float: left;
+		}
+
+		.form-row input[type="text"],
+		.form-row input[type="password"]{
+			width: 65%;
+		}
+	}
+#kg_uname{
+	background-image: url(img/icon-pass.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	padding-left: 30px;
+}
+
+.txt-box{
+	background-image: url(img/sprite-2.png);
+	background-repeat: no-repeat;
+	padding-left: 30px !important;
+}
+.txt-box.icon-lock{background-position: 10px 10px;}
+.txt-box.icon-heart{background-position: 10px -180px;}
+
+.txt-box1{
+	background-image: url(img/sprite.png);
+	background-repeat: no-repeat;
+	padding-left: 30px !important;
+}
+.txt-box1.icon-lock{background-position: 10px 10px;}
+.txt-box1.icon-heart{background-position: 10px -180px;}
+
+</style>
+
+
+<div class="form-wrap">
+	<form action="thankyou.html" method="get">
+		<div class="form-row">
+			<label for="kg_uname">User Name</label>
+			<input type="text" placeholder="Your name" id="kg_uname" name="UserName">
+		</div>
+		<div class="form-row">
+			<label for="kg_pass">Password</label>
+			<input type="password" placeholder="Your password" id="kg_pass" name="Password" class="txt-box icon-lock">
+		</div>
+		<div class="form-row">
+			<label for="kg_age">Age</label>
+			<input type="text" placeholder="Your Age" id="kg_age" name="Age" value="25" required readonly disabled class="txt-box icon-heart" >
+		</div>
+		<div class="form-row">
+			<label for="kg_uname1">User Name</label>
+			<input type="text" placeholder="Your name" id="kg_uname1" name="UserName">
+		</div>
+		<div class="form-row">
+			<label for="kg_pass1">Password</label>
+			<input type="password" placeholder="Your password" id="kg_pass1" name="Password" class="txt-box1 icon -lock">
+		</div>
+		<div class="form-row">
+			<label for="kg_age1">Age</label>
+			<input type="text" placeholder="Your Age" id="kg_age1" name="Age" value="25" required readonly disabled class="txt-box1 ico n-heart" >
+		</div>
+		<div class="form-row">
+			<label for="kg_resume">Resume</label>
+			<input type="file" placeholder="Your Resume" id="kg_resume" name="Resume">
+		</div>
+		<div class="form-new-row">
+			<label class="main-lbl">Preferred Batch</label>
+			<div class="rdo-wrap">
+				<div>
+					<input type="radio" value="morning" name="preferred-batch" id="batch01">
+					<label for="batch01">Morning</label>
+				</div>
+				<div>
+					<input type="radio" value="afternoon" name="preferred-batch" id="batch02">
+					<label for="batch02">afternoon</label>
+				</div>
+				<div>
+					<input type="radio" value="evening" name="preferred-batch" id="batch03">
+					<label for="batch03">evening</label>
+				</div>
+				<div>
+					<input type="radio" value="weekend" name="preferred-batch" id="batch04">
+					<label for="batch04">weekend</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-new-row">
+			<label class="main-lbl">Available Subjects</label>
+			<div class="rdo-wrap">
+				<div>
+					<input type="checkbox" value="html" name="avail-subject" id="subject01">
+					<label for="subject01">html</label>
+				</div>
+				<div>
+					<input type="checkbox" value="css" name="avail-subject" id="subject02">
+					<label for="subject02">css</label>
+				</div>
+				<div>
+					<input type="checkbox" value="js" name="avail-subject" id="subject03">
+					<label for="subject03">js</label>
+				</div>
+				<div>
+					<input type="checkbox" value="jquery" name="avail-subject" id="subject04">
+					<label for="subject04">jquery</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-row">
+			<label for="">Message</label>
+			<textarea name="" id="" cols="30" rows="5"></textarea>
+		</div>
+		<div class="form-row">
+			<label for="">Message</label>
+			<select name="" id="">
+				<option value="Select">Select</option>
+				<optgroup label="Metro Cities">
+					<option value="Delhi">Delhi</option>
+					<option value="Chennai">Chennai</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="Kolkata">Kolkata</option>
+				</optgroup>
+				<optgroup label="Other cities">
+					<option value="Mysore">Mysore</option>
+					<option value="bangalore">bangalore</option>
+					<option value="Chennai">Chennai</option>
+					<option value="hyderabad">hyderabad</option>
+				</optgroup>
+			</select>
+		</div>
+		<div class="form-row">
+			<label for="">Message</label>
+			<select name="" id="" multiple size="3">
+				<option value="Delhi">Delhi</option>
+				<option value="Chennai">Chennai</option>
+				<option value="Mumbai">Mumbai</option>
+				<option value="Kolkata">Kolkata</option>
+				<option value="Mysore">Mysore</option>
+				<option value="bangalore">bangalore</option>
+				<option value="Chennai">Chennai</option>
+				<option value="hyderabad">hyderabad</option>
+			</select>
+		</div>
+		<div class="form-row">
+			<input type="submit" value="Register Now">
+			<input type="reset" value="clear">
+			<input type="button" value="your own button">
+			<button type="submit">Your own button</button>
+		</div>
+		
+	</form>
+</div>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<style>
+	.form-row-new{
+		padding-bottom: 15px;
+		border-bottom: dotted 1px #CCC;
+		margin-bottom: 15px;
+	}
+	.form-row-new:after{
+		clear: both;
+		content: "";
+		display: table;
+	}
+	.form-row-new label{
+		padding-bottom: 0;
+		padding-right: 15px;
+		text-align: right;
+		width: 35%;
+		float: left;
+	}
+	.input-wrap{
+		width: 65%;
+		float: left;
+		position: relative;
+	}
+	.input-wrap:before{
+		content: "";
+		width: 20px;
+		height: 20px;
+		background-color: red;
+		left: 5px;
+		top: 8px;
+		position: absolute;
+	}
+	.input-wrap input{
+		width: 100%;
+		border: solid 1px grey;
+		border-radius: 4px;
+		padding: 5px 8px 5px 30px;
+	}
+</style>
+
+<div class="form-wrap">
+	<form action="thankyou.html" method="get">
+		<div class="form-row-new">
+			<label for="kg_uname33">User Name</label>
+			<div class="input-wrap">
+				<input type="text" placeholder="Your name" id="kg_uname33" name="UserName">
+			</div>
+		</div>
+		<div class="form-row-new">
+			<label for="">User Name</label>
+			<div class="input-wrap">
+				<input type="email" placeholder="Your name" id="" name="UserName">
+			</div>
+		</div>
+		<div class="form-row-new">
+			<label for="">User Name</label>
+			<div class="input-wrap">
+				<input type="number" placeholder="Your name" id="" name="UserName" min="200" max="5000" step="100">
+			</div>
+		</div>
+		<div class="form-row-new">
+			<label for="">User Name</label>
+			<div class="input-wrap">
+				<input type="range" placeholder="Your name" id="" name="UserName" min="200" max="5000" step="100">
+			</div>
+		</div>
+		<div class="form-row-new">
+			<label for="">User Name</label>
+			<div class="input-wrap">
+				<input type="date" id="" name="UserName" >
+			</div>
+		</div>
+		
+	</form>
+</div>
+
+
+
 
 	</div><!-- eo .container -->
 	<footer class="site-footer">

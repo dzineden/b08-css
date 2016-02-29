@@ -44,6 +44,11 @@ a:hover{
 
 /* Site Header
 ++++++++++++++++++++++++++++++++++++++++++ */
+
+*{
+    box-sizing: border-box;
+}
+
 .site-header{
 	background-color: #FFC107;
 	padding-top:1px;
